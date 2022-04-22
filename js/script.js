@@ -10,12 +10,9 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register(
-    "/ICS2O-Unit-5-01-JS/sw.js",
-    {
-      scope: "/ICS2O-Unit-5-01-JS/",
-    }
-  )
+  navigator.serviceWorker.register("/ICS2O-Unit-5-01-JS/sw.js", {
+    scope: "/ICS2O-Unit-5-01-JS/",
+  })
 }
 
 /**
@@ -23,8 +20,7 @@ if (navigator.serviceWorker) {
  */
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
-  document.getElementById("demo").innerHTML =
-Math.floor(Math.random() * 6) + 1;
+  document.getElementById("demo").innerHTML = Math.floor(Math.random() * 6) + 1
 }
 
 /**
