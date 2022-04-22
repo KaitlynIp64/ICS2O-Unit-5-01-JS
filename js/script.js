@@ -28,15 +28,16 @@ function updateSliderValue(valueFromSlider) {
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  document.getElementById("random-number").innerHTML = Math.floor(Math.random() * 6) + 1
+  document.getElementById("random-number").innerHTML =
+    Math.floor(Math.random() * 6) + 1
 }
 
-    // process
-    if (random-number == slider-value) {
-    print("Congratulations!");
+// process
+if (random - number == slider - value) {
+  print("Congratulations!")
 }
 
-    // process
-    if (random-number != slider-value) {
-    print("Try again!");
+// process
+if (random - number != slider - value) {
+  print("Try again!")
 }
