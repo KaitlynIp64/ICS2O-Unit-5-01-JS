@@ -20,10 +20,7 @@ if (navigator.serviceWorker) {
  */
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
-<<<<<<< HEAD
-  
-=======
->>>>>>> origin/main
+
   document.getElementById("demo").innerHTML = Math.floor(Math.random() * 6) + 1
 }
 
