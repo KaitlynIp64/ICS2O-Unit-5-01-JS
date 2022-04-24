@@ -36,8 +36,8 @@ function myButtonClicked() {
 if (random - number == slider - value) {
   print("Congratulations!")
 }
-  //  block of code to be executed if condition1 is true
+//  block of code to be executed if condition1 is true
 else if (random - number != slider - value) {
   print("Try again!")
 }
-  //  block of code to be executed if the condition1 is false and condition2 is true
+//  block of code to be executed if the condition1 is false and condition2 is true
