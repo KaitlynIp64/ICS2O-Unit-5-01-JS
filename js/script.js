@@ -18,6 +18,7 @@ if (navigator.serviceWorker) {
 /**
  * This function updates the slider value.
  */
+
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
 
@@ -37,7 +38,7 @@ if (random - number == slider - value) {
   print("Congratulations!")
 }
 //  block of code to be executed if condition1 is true
-else if (random - number != slider - value) {
+else if (random - number !== slider - value) {
   print("Try again!")
 }
 //  block of code to be executed if the condition1 is false and condition2 is true
