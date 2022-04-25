@@ -15,29 +15,27 @@ if (navigator.serviceWorker) {
   })
 }
 
+const randomNumber = Math.floor(Math.random() * 6) + 1
+
 /**
  * This function updates the slider value.
  */
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
-
-  document.getElementById("demo").innerHTML = Math.floor(Math.random() * 6) + 1
 }
 
 /**
- * This function displays the slider value.
+ * This function compares slider with random number.
  */
 function myButtonClicked() {
-  document.getElementById("random-number").innerHTML =
-    Math.floor(Math.random() * 6) + 1
-}
+  const sliderValue = slider.value
 
-// process
-if (random - number == slider - value) {
-  print("Congratulations!")
+  // process
+  if (sliderValue == randomNumber) {
+    console.log("Congratulations!")
+  }
+  //  block of code to be executed if condition1 is true
+  if (sliderValue != randomNumber) {
+    console.log("Try again!")
+  }
 }
-//  block of code to be executed if condition1 is true
-else if (random - number !== slider - value) {
-  print("Try again!")
-}
-//  block of code to be executed if the condition1 is false and condition2 is true
