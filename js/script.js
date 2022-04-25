@@ -32,10 +32,12 @@ function myButtonClicked() {
 
   // process
   if (sliderValue == randomNumber) {
-    console.log("Congratulations!")
+    document.getElementById('answer').innerHTML = 'Answer is ' + randomNumber +'!' +  ' Congratulations!'
+   // console.log("Congratulations!")
   }
   //  block of code to be executed if condition1 is true
   if (sliderValue != randomNumber) {
-    console.log("Try again!")
+    document.getElementById('answer').innerHTML = 'Answer is ' + randomNumber +'!' +  ' Try again!'
+   // console.log("Try again!")
   }
 }
